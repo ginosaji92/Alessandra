@@ -1,37 +1,201 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Miniport by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-<head>
-  <title>Odontograma</title>
-  <link rel="stylesheet" href="master.css">
-</head>
-<body style="margin:0">
-  <div id="draw">
-    <div id="toolbar">
-      <div id="rad">
-        Radius <span id="radval">10</span>
-        <div id ="decrad" class="radcontrol">-</div>
-        <div id ="incrad" class="radcontrol">+</div>
-      </div>
-      <div id="colors">
-        <div class="swatch active" style="background-color: red"></div>
-        <div class="swatch" style="background-color: blue"></div>
-      </div>
-      <div id="save">
-        Sabe
-      </div>
-      <input id="clear" type="button" value="save2" onclick="save2();">
-      <input id="clear" type="button" value="putImg" onclick="putImg();">
-      <input id="clear" type="button" value="clear" onclick="clearCanvas(canvas);">
-    </div>
-    <div>
-      <canvas id="canvas" style="display: block;">
-        Sorry, your browser is rubbish.
-      </canvas>
-    </div>
-  </div>
-  <script src="main.js"></script>
-  <script src="radius.js"></script>
-  <script src="colors.js"></script>
-  <script src="save.js"></script>
-</body>
+	<head>
+		<title>Miniport by HTML5 UP</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Nav -->
+			<nav id="nav">
+				<ul class="container">
+					<li><a href="#top">Inicio</a></li>
+					<li><a href="#work">Acerca de mi</a></li>
+					<li><a href="#portfolio">Curso</a></li>
+					<li><a href="#contact">Contacto</a></li>
+				</ul>
+			</nav>
+
+		<!-- Home -->
+			<div class="wrapper style1 first">
+				<article class="container" id="top">
+					<div class="row">
+						<div class="4u">
+							<span class="image fit"><img src="images/foto.jpg" alt="" /></span>
+						</div>
+						<div class="8u">
+							<header>
+								<h1><strong>Ingridh Quispe Chuan.</strong></h1>
+							</header>
+							<p>En esta pagina web podras encontrar informacion acerca de mi persona tanto en el ambito academico como social , asu vez podras encontrar iinformacion acerca de los proyectos que he venido desarroLlando hasta el momentoy los cursos en los que me desarrollo en la actualidad.</p>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="4u">
+								<section class="box style1">
+									<a href="https://www.facebook.com/ingridhd.quispechuan"><img src="images/facebook.gif" width="120px"></a>
+									<h3>Facebook</h3>
+								</section>
+							</div>
+							<div class="4u">
+								<section class="box style1">
+									<a href="https://twitter.com/IngridhQC"><img src="images/twitter.png" width="120px"></a>
+									<h3>Twitter</h3>
+								</section>
+							</div>
+							<div class="4u">
+								<section class="box style1">
+									<a href="https://www.linkedin.com/profile/view?id=220754688&trk=nav_responsive_tab_profile"><img src="images/linkedin.png" width="120px"></a>
+									<h3>Linkedin</h3>
+								</section>
+							</div>
+						</div>
+					</div>
+				</article>
+			</div>
+
+		<!-- Work -->
+			<div class="wrapper style2">
+				<article id="work">
+					<header>
+						<h2>Enlaces de contacto</h2>
+						<p id="mid">Soy ingridh Quispe Chuan , actualmente me encuentro cursando el tercer año de la carrera <br> de Ing Industrial  en la universidad UTEC . En mis ratos libres me gusta leer y  bailar ,  escuchar música, <br> la fotografía, reunirme con mis amigos. Tengo un especial interes por abordar temas de alcanze social <br> en mis proyectos como los que mencionare a continuacion</p>
+
+					</header>
+					<div class="container">
+						<div class="row">
+							<div>
+								<section class="box style1">
+									<img src="images/poster.png">
+									<h3>Filtro purificador de agua</h3>
+								</section>
+							</div>
+						</div>
+					</div>
+					<footer>
+						<p></p>
+					</footer>
+				</article>
+			</div>
+
+		<!-- Portfolio -->
+			<div class="wrapper style3">
+				<article id="portfolio">
+					<header>
+						<h2>Investigación de Operaciones I</h2>
+					</header>
+					<div class="tabCurs">
+								<nav>
+									<ul>
+										<button onclick="tab1()" class="button scrolly">
+											Tutorial Lingo
+										</button>
+										<button onclick="tab2()" class="button scrolly">
+											Plan agregado
+										</button>
+									</ul>
+								</nav>
+							</div>
+					<span id="tab2">
+						<p>PC 3 –Plan Agregado <br>	
+En esta oportunidad ,veremos el tema relacionado a lo que es un Plan Agregado  ,para lo cual usaremos un ejemplo para explicar de manera mas detallada. <br>
+Acontnuacion les comparto la informacion del caso  , un concepto previo  y un link con el video tutorial de la solucion </p>
+						<iframe src="https://docs.google.com/a/utec.edu.pe/presentation/d/1dFPzRt5g6s3qSdlQ6MF-p43Eku8v6tfjhBx4bOuxAVE/embed?start=false&loop=false&delayms=3000" frameborder="0" width="700" height="549" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> <br>
+						<a href="https://www.youtube.com/watch?v=BL3OBJjKBAg" class="button big scrolly">Solución</a>
+					</span>
+					
+					<span id="tab1">
+						<p>En este curso haremos uso de los diferentes modelos matemáticos con el objetivo de realizar un proceso <br>de toma de decisiones , teniendo en cuenta  la escasez de recursos   para determinar cómo se puede <br>optimizar o maximizar beneficios , como también establecer la minimización de los costos</p>
+						<a href="https://www.youtube.com/watch?v=pzmIkqT0cbo" class="button big scrolly">Tutorial de Lingo</a>
+					</span>
+				</article>
+			</div>
+
+		<!-- Contact -->
+			<div class="wrapper style4">
+				<article id="contact" class="container 75%">
+					<header>
+						<h2>Have me make stuff for you.</h2>
+					</header>
+					<div>
+						<div class="row">
+							<div class="12u">
+								<form method="post" action="#">
+									<div>
+										<div class="row">
+											<div class="6u">
+												<input type="text" name="name" id="name" placeholder="Name" />
+											</div>
+											<div class="6u">
+												<input type="text" name="email" id="email" placeholder="Email" />
+											</div>
+										</div>
+										<div class="row">
+											<div class="12u">
+												<input type="text" name="subject" id="subject" placeholder="Subject" />
+											</div>
+										</div>
+										<div class="row">
+											<div class="12u">
+												<textarea name="message" id="message" placeholder="Message"></textarea>
+											</div>
+										</div>
+										<div class="row 200%">
+											<div class="12u">
+												<ul class="actions">
+													<li><input type="submit" value="Send Message" /></li>
+													<li><input type="reset" value="Clear Form" class="alt" /></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+				</article>
+			</div>
+
+	</body>
+	<script>
+								function tab1() 
+								{
+   		 						document.getElementById("tab1").style.display = "inline-block";
+   		 						document.getElementById("tab2").style.display = "none";
+								}
+								function tab2() 
+								{
+   		 						document.getElementById("tab1").style.display = "none";
+   		 						document.getElementById("tab2").style.display = "inline-block";
+								}
+							</script>
+							<style type="text/css">
+							#tab1
+	{
+		display: inline-block;
+	}
+	#tab2
+	{
+		display: none;
+	}
+							</style>
 </html>
