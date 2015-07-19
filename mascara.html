@@ -23,20 +23,51 @@
 			
 		</div>
 		<div id="layout-mid">
-			<div class="img">
-			<section style="width: 500px; height: 300px;">
-				<a href="" data-bind="click: visible.bind($data, !visible())">
-				    <img style="width: 500px;" data-bind="slideUpDown: visible" src="img/img1.jpg" />
+				<div class="form_p">
+					<form>
+					<label><strong>Regalo para: </strong><input type="text" data-bind="value: nombre_regalo, valueUpdate:'afterkeydown'" placeholder="Ingrese aqui un nombre" autofocus/></label></br>
+					<label><strong>Email: </strong><input type="email" data-bind="value: email_regalo, valueUpdate:'afterkeydown'" placeholder="Ingrese aqui el Email" autofocus/></label></br>
+					<label><strong>Mensaje: </strong></label></br><textarea rows="14" cols="50" maxlength="200" data-bind="value: texto_regalo, valueUpdate:'afterkeydown'" placeholder="Ingrese aqui un mensaje no más de 400 caracteres"></textarea></br>
+					</form>
+					<head>
 
-				   
-				    <img style="width: 500px;" data-bind="slideUpDown: !visible()" src="img/img2.jpg" />
-				</a>
-			</section>
-			<section style="width: 500px; height: 300px;">
-					<p data-bind="slideUpDown: visible">El Batmobile (en inglés) (conocido como Batmóvil en España y como Batimóvil en Latinoamérica) es el transporte que Batman utiliza comúnmente para desplazarse en Gotham City. Es un vehículo, cuyo diseño se remite al traje del hombre murciélago, equipado con artefactos especiales; ya sea porque se ha destruido o porque necesitaba actualizarse, Batman regularmente ha ido cambiando de Batmobile. Todos los modelos del Batmobile se encuentran en la Batcueva, donde son diseñados y fabricados.</p>
-					<p data-bind="slideUpDown: !visible()">El Batitraje o Bat-traje (Batsuit en inglés) es el disfraz que porta el personaje Batman de la editorial DC Comics. Básicamente es un traje que recubre todo su cuerpo y cuenta además con una máscara y una capa que le permite planear cuándo está cayendo. Batman lleva este traje tanto para ocultar su identidad, cómo para asustar a los criminales. La mayoría de las versiones del Batitraje incorporar algún tipo de armadura, y con frecuencia una máscara con lentes de visión nocturna, vairos filtros de gas, y otras ayudas para combatir y proteger de manera eficaz. Todas las versiones del uniforme tienen un cinturón de armas no dañinas que lo ayudan a combatir contra los criminales.</p>
-			</section>
-			</div>
+<script>
+function bgChange(bg) {
+    document.body.style.background = bg;
+}
+</script>
+</head>
+
+<body>
+
+<h2>Change background color</h2>
+<p>Mouse over the squares!</p>
+<div>Hola como estás?</div>
+<table style="width:300px;height:100px">
+  <tr>
+    <td onmouseover="bgChange(this.style.backgroundColor)" 
+        onmouseout="bgChange('transparent')"
+        style="background-color:Khaki">
+    </td>
+    <td onmouseover="bgChange(this.style.backgroundColor)" 
+        onmouseout="bgChange('transparent')"
+        style="background-color:PaleGreen">
+    </td>
+    <td onmouseover="bgChange(this.style.backgroundColor)" 
+        onmouseout="bgChange('transparent')"
+        style="background-color:Silver">
+    </td>
+  </tr>
+</table>
+
+</body>
+
+				</div>
+				<div class="preview">
+					<img class="producto" src="img/mascara.jpg">
+					<p>Regalo para: <strong data-bind="text: nombre_regalo" autofocus></strong></p> <p><<strong data-bind="text: email_regalo"></strong> ></p>
+					<textarea rows="5" cols="50" data-bind="text: texto_regalo" readonly></textarea>
+				</div>
 		</div>
 		<div id="layout-bot">
 			<footer>
@@ -58,11 +89,9 @@
 				</form>
 			</div>
 		</div>
-		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-		<script src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-2.2.1.js"></script>  
 		<script src="js/jquery-1.11.1.min.js"></script>
 		<script src="js/knockout-3.2.0.js"></script>
-		<script src="js/script2.js"></script>
+		<script src="js/script.js"></script>
 		<script src="js/script3.js"></script>
 	</body>
 </html>
